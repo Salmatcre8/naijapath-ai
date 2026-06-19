@@ -1,0 +1,260 @@
+[
+  {
+    "id": "npower",
+    "name": "N-Power",
+    "agency": "Federal Ministry of Humanitarian Affairs",
+    "category": "employment",
+    "emoji": "💼",
+    "description": "Skills development and monthly stipend program for unemployed Nigerian youth. Covers agriculture, health, education, and technology tracks.",
+    "benefit": "₦30,000/month stipend + skills training + device",
+    "applyUrl": "https://npower.gov.ng",
+    "officialSource": "https://npower.gov.ng",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 35,
+      "employmentStatus": ["unemployed"],
+      "educationMin": "secondary",
+      "states": "all",
+      "requiresNationalID": true,
+      "requiresBusiness": false,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "National Identification Number (NIN)",
+      "Bank Verification Number (BVN)",
+      "Educational certificates (SSCE minimum)",
+      "Passport photograph",
+      "Bank account details"
+    ],
+    "processingTime": "4–8 weeks after application",
+    "contactInfo": "0800-NPOWER or npower.gov.ng",
+    "tags": ["youth", "employment", "skills", "federal"]
+  },
+  {
+    "id": "tradermoni",
+    "name": "TraderMoni (GEEP)",
+    "agency": "Bank of Industry",
+    "category": "business",
+    "emoji": "🛒",
+    "description": "Zero-interest loan scheme for petty traders, artisans, and market women. No collateral required. Designed for Nigeria's informal economy.",
+    "benefit": "₦10,000–₦100,000 interest-free loan",
+    "applyUrl": "https://geep.gov.ng",
+    "officialSource": "https://geep.gov.ng",
+    "difficulty": "Easy",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 65,
+      "employmentStatus": ["self-employed", "unemployed"],
+      "educationMin": "none",
+      "states": "all",
+      "requiresNationalID": true,
+      "requiresBusiness": false,
+      "mustHaveTrade": true,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "BVN",
+      "Valid government-issued ID (NIN, Voter's Card, Driver's License)",
+      "Passport photograph",
+      "Proof of trade or business activity"
+    ],
+    "processingTime": "2–4 weeks",
+    "contactInfo": "geep.gov.ng or nearest market association office",
+    "tags": ["traders", "loan", "informal economy", "no collateral"]
+  },
+  {
+    "id": "marketmoni",
+    "name": "MarketMoni (GEEP)",
+    "agency": "Bank of Industry",
+    "category": "business",
+    "emoji": "🏪",
+    "description": "Group loan scheme for market associations and cooperative societies. Larger funding for organized groups of traders.",
+    "benefit": "₦50,000–₦1,000,000 group loan",
+    "applyUrl": "https://geep.gov.ng",
+    "officialSource": "https://geep.gov.ng",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 65,
+      "employmentStatus": ["self-employed"],
+      "educationMin": "none",
+      "states": "all",
+      "requiresNationalID": true,
+      "requiresBusiness": false,
+      "requiresGroup": true,
+      "groupSizeMin": 5,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "Group membership list (minimum 5 members)",
+      "BVN for all members",
+      "Market/cooperative association letter",
+      "Individual valid IDs for all members"
+    ],
+    "processingTime": "3–5 weeks",
+    "contactInfo": "geep.gov.ng or your market association leader",
+    "tags": ["groups", "cooperatives", "traders", "loan"]
+  },
+  {
+    "id": "nyif",
+    "name": "Nigeria Youth Investment Fund (NYIF)",
+    "agency": "Federal Ministry of Youth & Sports Development",
+    "category": "business",
+    "emoji": "🚀",
+    "description": "Low-interest business loans for Nigerian youth entrepreneurs. Supports startups and existing businesses across all sectors.",
+    "benefit": "Up to ₦25,000,000 business loan at low interest",
+    "applyUrl": "https://nyif.nmfb.com.ng",
+    "officialSource": "https://nyif.nmfb.com.ng",
+    "difficulty": "Hard",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 35,
+      "employmentStatus": ["self-employed", "unemployed", "employed"],
+      "educationMin": "secondary",
+      "states": "all",
+      "requiresNationalID": true,
+      "requiresBusiness": true,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "NIN",
+      "BVN",
+      "Business plan or pitch deck",
+      "CAC registration (or proof of intent to register)",
+      "Bank statements (6 months)",
+      "Passport photograph",
+      "Educational certificates"
+    ],
+    "processingTime": "6–12 weeks",
+    "contactInfo": "nyif.nmfb.com.ng or Federal Ministry of Youth offices",
+    "tags": ["youth", "entrepreneurship", "startup", "business loan"]
+  },
+  {
+    "id": "nhis",
+    "name": "Basic Health Care Provision Fund (BHCPF)",
+    "agency": "Federal Ministry of Health / NHIS",
+    "category": "health",
+    "emoji": "🏥",
+    "description": "Subsidized or free healthcare coverage for vulnerable Nigerians. Covers maternal care, children under 5, elderly, and low-income households at participating facilities.",
+    "benefit": "Free or heavily subsidized healthcare at participating facilities",
+    "applyUrl": "https://nhis.gov.ng",
+    "officialSource": "https://nhis.gov.ng",
+    "difficulty": "Easy",
+    "eligibility": {
+      "ageMin": 0,
+      "ageMax": 100,
+      "employmentStatus": "all",
+      "educationMin": "none",
+      "states": "all",
+      "requiresNationalID": false,
+      "requiresBusiness": false,
+      "targetGroups": ["pregnant women", "children under 5", "elderly above 60", "low-income households"],
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "Any valid ID (NIN, Voter's Card, Driver's License)",
+      "Proof of residence",
+      "Referral from primary health center (some states)"
+    ],
+    "processingTime": "Same day enrollment at participating health center",
+    "contactInfo": "Nearest Primary Health Care center or nhis.gov.ng",
+    "tags": ["health", "free", "maternal", "children", "elderly"]
+  },
+  {
+    "id": "lsetf",
+    "name": "Lagos Employment Trust Fund (LSETF)",
+    "agency": "Lagos State Government",
+    "category": "business_employment",
+    "emoji": "🌊",
+    "description": "Low-interest loans and free vocational training for Lagos State residents. One of Nigeria's most accessible state-level programs.",
+    "benefit": "₦50,000–₦5,000,000 loan at 5% interest + free skills training",
+    "applyUrl": "https://lsetf.ng",
+    "officialSource": "https://lsetf.ng",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 45,
+      "employmentStatus": ["unemployed", "self-employed"],
+      "educationMin": "none",
+      "states": ["Lagos"],
+      "requiresNationalID": true,
+      "requiresBusiness": false,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "Proof of Lagos residence (utility bill or tenancy agreement)",
+      "Valid government-issued ID",
+      "BVN",
+      "Business plan (for loans above ₦100,000)",
+      "Passport photograph"
+    ],
+    "processingTime": "3–6 weeks after application review",
+    "contactInfo": "lsetf.ng or 0700-LSETF-NG",
+    "tags": ["Lagos", "state program", "loan", "training"]
+  },
+  {
+    "id": "nassp",
+    "name": "Conditional Cash Transfer (NASSP)",
+    "agency": "National Social Safety Net Coordinating Office",
+    "category": "welfare",
+    "emoji": "🤲",
+    "description": "Monthly cash transfers for Nigeria's most vulnerable and poorest households. Requires enrollment in the National Social Register.",
+    "benefit": "₦5,000/month per household",
+    "applyUrl": "https://nsio.gov.ng",
+    "officialSource": "https://nsio.gov.ng",
+    "difficulty": "Hard",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 100,
+      "employmentStatus": ["unemployed"],
+      "educationMin": "none",
+      "states": "all",
+      "requiresNationalID": true,
+      "requiresBusiness": false,
+      "incomeThreshold": "extreme poverty",
+      "requiresEnrollment": "National Social Register",
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "NIN",
+      "Proof of residence",
+      "Household information form",
+      "Field verification by Social Development Officer"
+    ],
+    "processingTime": "8–16 weeks (requires field verification visit)",
+    "contactInfo": "State Ministry of Social Development office",
+    "tags": ["welfare", "cash transfer", "poverty", "vulnerable"]
+  },
+  {
+    "id": "homegrownfeeding",
+    "name": "Home Grown School Feeding Programme",
+    "agency": "Federal Ministry of Humanitarian Affairs",
+    "category": "nutrition",
+    "emoji": "🍲",
+    "description": "Free daily nutritious meals for pupils in public primary schools (Primary 1–3). Automatic enrollment through the child's school.",
+    "benefit": "Free nutritious meal every school day for your child",
+    "applyUrl": "https://hmhadmsd.gov.ng",
+    "officialSource": "https://hmhadmsd.gov.ng",
+    "difficulty": "Easy",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 100,
+      "employmentStatus": "all",
+      "educationMin": "none",
+      "states": "all",
+      "requiresNationalID": false,
+      "requiresBusiness": false,
+      "mustHaveDependents": true,
+      "dependentInPublicSchool": true,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "Child's public school enrollment proof",
+      "Parent or guardian valid ID"
+    ],
+    "processingTime": "Automatic enrollment through school head teacher",
+    "contactInfo": "Speak to your child's school head teacher directly",
+    "tags": ["nutrition", "children", "school", "free meals", "parents"]
+  }
+]

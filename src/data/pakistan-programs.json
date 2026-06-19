@@ -1,0 +1,189 @@
+[
+  {
+    "id": "ehsaas-kafaalat",
+    "name": "Ehsaas Kafaalat",
+    "agency": "Ministry of Poverty Alleviation & Social Safety",
+    "category": "welfare",
+    "emoji": "💚",
+    "description": "Monthly cash stipend for women from low-income households. Pakistan's largest social protection program targeting the most vulnerable women.",
+    "benefit": "PKR 2,000/month direct cash transfer",
+    "applyUrl": "https://ehsaas.nadra.gov.pk",
+    "officialSource": "https://pass.gov.pk",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 100,
+      "gender": "female",
+      "employmentStatus": "all",
+      "educationMin": "none",
+      "provinces": "all",
+      "requiresNationalID": true,
+      "requiresCNIC": true,
+      "incomeThreshold": "low income",
+      "genderRestriction": "female"
+    },
+    "requiredDocuments": [
+      "CNIC (Computerized National Identity Card)",
+      "Biometric verification at Ehsaas center",
+      "Household poverty score assessment"
+    ],
+    "processingTime": "2–6 weeks after household survey",
+    "contactInfo": "8171 helpline or nearest Ehsaas center",
+    "tags": ["women", "cash transfer", "welfare", "federal"]
+  },
+  {
+    "id": "bisp",
+    "name": "Benazir Income Support Programme (BISP)",
+    "agency": "BISP / Ministry of Poverty Alleviation",
+    "category": "welfare",
+    "emoji": "🤲",
+    "description": "Quarterly cash transfers for Pakistan's poorest families. Survey-based enrollment targeting households below the poverty line.",
+    "benefit": "PKR 8,500 per quarter (PKR 34,000/year)",
+    "applyUrl": "https://bisp.gov.pk",
+    "officialSource": "https://bisp.gov.pk",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 100,
+      "gender": "female",
+      "employmentStatus": "all",
+      "educationMin": "none",
+      "provinces": "all",
+      "requiresCNIC": true,
+      "incomeThreshold": "extreme poverty",
+      "povertyScoreMax": 16.17,
+      "genderRestriction": "female"
+    },
+    "requiredDocuments": [
+      "CNIC",
+      "Household survey registration form",
+      "Biometric verification"
+    ],
+    "processingTime": "Survey-based enrollment — 4–12 weeks",
+    "contactInfo": "0800-26477 (toll-free) or bisp.gov.pk",
+    "tags": ["cash transfer", "poverty", "women", "quarterly"]
+  },
+  {
+    "id": "ehsaas-rashan",
+    "name": "Ehsaas Rashan Programme",
+    "agency": "Ministry of Poverty Alleviation",
+    "category": "nutrition",
+    "emoji": "🌾",
+    "description": "Subsidized essential food items for low-income Pakistani families. Accessible at participating stores across Pakistan through CNIC verification.",
+    "benefit": "30–40% subsidy on staple food items",
+    "applyUrl": "https://ehsaas.nadra.gov.pk",
+    "officialSource": "https://pass.gov.pk",
+    "difficulty": "Easy",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 100,
+      "employmentStatus": "all",
+      "educationMin": "none",
+      "provinces": "all",
+      "requiresCNIC": true,
+      "incomeThreshold": "below PKR 50,000/month",
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "CNIC",
+      "Mobile number registered with your CNIC"
+    ],
+    "processingTime": "Instant access at participating stores via CNIC scan",
+    "contactInfo": "8070 helpline or sms RASHAN to 8070",
+    "tags": ["food", "subsidy", "nutrition", "easy access"]
+  },
+  {
+    "id": "kamyab-jawan",
+    "name": "Kamyab Jawan Programme",
+    "agency": "Prime Minister's Youth Programme",
+    "category": "business",
+    "emoji": "🚀",
+    "description": "Low-interest business loans for young Pakistani entrepreneurs. Supports both new business ideas and existing small enterprises across all sectors.",
+    "benefit": "PKR 100,000–PKR 25,000,000 at 3–8% annual interest",
+    "applyUrl": "https://kamyabjawan.gov.pk",
+    "officialSource": "https://kamyabjawan.gov.pk",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 21,
+      "ageMax": 45,
+      "employmentStatus": ["unemployed", "self-employed"],
+      "educationMin": "none",
+      "provinces": "all",
+      "requiresCNIC": true,
+      "requiresBusiness": false,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "CNIC",
+      "Business plan (for larger amounts)",
+      "Bank account details",
+      "2 passport-size photographs",
+      "Educational certificates (if available)"
+    ],
+    "processingTime": "4–8 weeks after application review",
+    "contactInfo": "kamyabjawan.gov.pk or 1819 helpline",
+    "tags": ["youth", "business", "loan", "entrepreneurship"]
+  },
+  {
+    "id": "sehat-sahulat",
+    "name": "Sehat Sahulat Programme",
+    "agency": "Ministry of National Health Services",
+    "category": "health",
+    "emoji": "🏥",
+    "description": "Free hospitalization coverage for low-income Pakistani families. Covers inpatient treatment up to PKR 1,000,000 per year at empaneled hospitals.",
+    "benefit": "Up to PKR 1,000,000/year in free hospital treatment",
+    "applyUrl": "https://sehatsahulat.com.pk",
+    "officialSource": "https://sehatsahulat.com.pk",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 0,
+      "ageMax": 100,
+      "employmentStatus": "all",
+      "educationMin": "none",
+      "provinces": ["KPK", "Punjab", "Federal", "AJK"],
+      "requiresCNIC": true,
+      "incomeThreshold": "low income",
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "CNIC of head of household",
+      "Family Registration Certificate (FRC) from NADRA",
+      "BISP/NADRA poverty score documentation (if available)"
+    ],
+    "processingTime": "Enrollment at district health office — 1–3 weeks",
+    "contactInfo": "sehatsahulat.com.pk or 0800-44004",
+    "tags": ["health", "hospitalization", "free", "family"]
+  },
+  {
+    "id": "pmyls",
+    "name": "PM Youth Laptop Scheme",
+    "agency": "Higher Education Commission Pakistan",
+    "category": "education",
+    "emoji": "💻",
+    "description": "Free laptops for high-performing students enrolled in public universities and degree awarding institutions across Pakistan.",
+    "benefit": "Free laptop (latest specification per batch)",
+    "applyUrl": "https://hec.gov.pk",
+    "officialSource": "https://hec.gov.pk",
+    "difficulty": "Medium",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 30,
+      "employmentStatus": ["student"],
+      "educationMin": "tertiary",
+      "provinces": "all",
+      "requiresCNIC": true,
+      "enrolledInPublicUniversity": true,
+      "cgpaMin": 2.5,
+      "genderRestriction": null
+    },
+    "requiredDocuments": [
+      "CNIC or B-Form (for under-18)",
+      "University enrollment letter",
+      "Previous semester result card",
+      "CGPA certificate (minimum 2.5 required)"
+    ],
+    "processingTime": "Each batch announced separately — check HEC website",
+    "contactInfo": "hec.gov.pk or 051-9040000",
+    "tags": ["education", "students", "university", "technology"]
+  }
+]
