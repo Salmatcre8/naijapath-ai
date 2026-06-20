@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Send, Shield, User, Bot } from 'lucide-react'
-import { runIntakeConversation } from '../lib/claude'
+import { runIntakeConversation } from '../lib/claude';
 
 const QUICK_REPLIES = {
   nigeria: [
