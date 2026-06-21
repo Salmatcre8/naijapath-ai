@@ -50,7 +50,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🌐 Deploy to Vercel (Free)
+## 🌐 Deploy to Vercel 
 
 1. Push your code to GitHub (see instructions below)
 2. Go to [vercel.com](https://vercel.com) → Sign in with GitHub
