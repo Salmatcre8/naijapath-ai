@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f8fafc;
@@ -15,29 +15,45 @@
   --border-subtle: #f1f5f9;
   --brand-green: #0A6B3B;
   --brand-green-light: #0D8A4E;
+  --brand-mint: #0A6B3B;
   --brand-gold: #D4A017;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
   --shadow-lg: 0 10px 40px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
+  /* Glass tokens — light mode keeps these understated */
+  --glass-bg: rgba(255,255,255,0.6);
+  --glass-bg-solid: #ffffff;
+  --glass-border: rgba(15,23,42,0.08);
+  --glass-blur: 18px;
+  --hero-text: var(--text-primary);
+  --hero-text-muted: var(--text-muted);
 }
-
+ 
 .dark {
-  --bg-primary: #0a0f1a;
-  --bg-secondary: #0f1829;
-  --bg-card: #111827;
-  --bg-hover: #1a2540;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #475569;
-  --border: #1e2d45;
-  --border-subtle: #162035;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-  --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
+  --bg-primary: #060f0c;
+  --bg-secondary: #0a1814;
+  --bg-card: #0d1f19;
+  --bg-hover: #142b23;
+  --text-primary: #eafff5;
+  --text-secondary: #9bc4b3;
+  --text-muted: #5c8473;
+  --border: #1c352b;
+  --border-subtle: #122a21;
+  --brand-mint: #3FE0AC;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.6);
+  /* Glass tokens — this is the "stage" look: deep, translucent, blurred */
+  --glass-bg: rgba(13,31,25,0.55);
+  --glass-bg-solid: #0f261e;
+  --glass-border: rgba(255,255,255,0.08);
+  --glass-blur: 20px;
+  --hero-text: #eafff5;
+  --hero-text-muted: #7fae9b;
 }
-
+ 
 * { box-sizing: border-box; }
-
+ 
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -46,13 +62,13 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   -webkit-font-smoothing: antialiased;
 }
-
+ 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-secondary); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
-
+ 
 /* Typing dots animation */
 @keyframes typingDot {
   0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
@@ -61,28 +77,28 @@ body {
 .typing-dot:nth-child(1) { animation: typingDot 1.2s infinite 0s; }
 .typing-dot:nth-child(2) { animation: typingDot 1.2s infinite 0.2s; }
 .typing-dot:nth-child(3) { animation: typingDot 1.2s infinite 0.4s; }
-
+ 
 /* Fade-in utility */
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 .animate-fade-slide { animation: fadeSlideUp 0.4s ease both; }
-
+ 
 /* Pulse CTA */
 @keyframes pulseGlow {
   0%, 100% { box-shadow: 0 0 0 0 rgba(10,107,59,0.4); }
   50% { box-shadow: 0 0 0 12px rgba(10,107,59,0); }
 }
 .pulse-glow { animation: pulseGlow 2.5s infinite; }
-
+ 
 /* Confidence bar fill */
 @keyframes barFill {
   from { width: 0%; }
   to   { width: var(--fill-width); }
 }
 .confidence-bar { animation: barFill 1.2s cubic-bezier(0.4,0,0.2,1) both; }
-
+ 
 /* Card hover */
 .program-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -91,7 +107,7 @@ body {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
-
+ 
 /* Chat bubble */
 .chat-bubble-ai {
   background: var(--bg-card);
@@ -101,7 +117,7 @@ body {
   background: linear-gradient(135deg, #0A6B3B, #0D8A4E);
   color: white;
 }
-
+ 
 /* Quick reply chip */
 .quick-chip {
   background: var(--bg-hover);
@@ -114,7 +130,7 @@ body {
   border-color: var(--brand-green);
   color: white;
 }
-
+ 
 /* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #0A6B3B 0%, #D4A017 100%);
@@ -122,19 +138,31 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+ 
 /* Glass effect for dark mode cards */
 .dark .glass-card {
   background: rgba(17, 24, 39, 0.8);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,0.06);
 }
-
-/* RTL support for Urdu */
+ 
+/* Glass panel — the floating chat card material */
+.glass-panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 24px 60px -12px rgba(0,0,0,0.35), 0 8px 24px rgba(0,0,0,0.18);
+}
+.glass-panel-solid {
+  background: var(--glass-bg-solid);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 16px 40px -8px rgba(0,0,0,0.4);
+}
 [dir="rtl"] { text-align: right; }
 [dir="rtl"] .chat-bubble-ai { border-radius: 18px 4px 18px 18px; }
 [dir="rtl"] .chat-bubble-user { border-radius: 4px 18px 18px 18px; }
-
+ 
 /* Smooth transitions */
 .theme-transition {
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
